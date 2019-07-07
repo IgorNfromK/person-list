@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.person{
+  background: #eeeeee;
+  width: 18rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 0.4s linear;
+
+ 
+}
+
+.person:hover{
+  box-shadow: 2px 5px 10px rgba(0, 2, 4, 0.3)
+}
+.person img{
+  border-radius: 50%;
+  border: 0.1rem;
+}
+.person h4{
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+  letter-spacing: 0.01rem;
+  color: black;
+}
+.person h5{
+  text-transform: capitalize;
+  margin: 0.5rem 0;
+  letter-spacing: 0.01rem;
+  color:gray;
+}
+
+@media screen and (min-width: 768){
+  .person-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+@media screen and (min-width: 992px){
+  .person-list{
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
